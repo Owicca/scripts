@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sudo docker run -ti --rm -d \
+  --name l_cyberchef \
+  -p 55000:8000 \
+  mpepping/cyberchef

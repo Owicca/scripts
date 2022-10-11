@@ -1,0 +1,15 @@
+#!/bin/bash
+
+function check_params () {
+  if [ $1 -lt $2 ]; then
+    echo "Not enough parameters"
+    exit 1
+  fi
+}
+
+function check_params_callback () {
+  if [ $1 -lt $2 ]; then
+    $($3 $4)
+    exit 1
+  fi
+}

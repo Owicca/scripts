@@ -1,0 +1,3 @@
+#!/bin/bash
+
+trans_bin -speak -b -I nl:en
